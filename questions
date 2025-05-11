@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>🌿 MOJA OKOLINA TEST for DORIAN 🌿</title>
+    <style>
+        body {
+            font-family: Comic Sans MS, cursive, sans-serif;
+            padding: 20px;
+            background: #e0f7fa;
+            font-size: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #00796b;
+            font-size: 28px;
+        }
+        .question {
+            background: #ffffff;
+            margin-bottom: 15px;
+            border-left: 6px solid #4db6ac;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+            font-size: 20px;
+        }
+        .answer {
+            display: none;
+            color: #2e7d32;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #4db6ac;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        button:hover {
+            background-color: #00897b;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌿 MOJA OKOLINA TEST for DORIAN 🌿</h1>
+
+    <div class="question">
+        <strong>Pitanje 1:</strong> Koja su prirodna staništa biljaka i životinja? (Nabroji bar tri)<br>
+        <button onclick="toggleAnswer('a0')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a0"><em>Odgovor:</em> Prirodna staništa biljaka i životinja su šuma, livada, rijeka, bara, jezero i more.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 2:</strong> Koje su razlike između žive i nežive prirode?<br>
+        <button onclick="toggleAnswer('a1')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a1"><em>Odgovor:</em> Živa priroda obuhvata ljude, biljke i životinje, dok neživa priroda uključuje vodu, vazduh, tlo i sunce.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 3:</strong> Navedi tri male i tri velike životinje iz prirode.<br>
+        <button onclick="toggleAnswer('a2')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a2"><em>Odgovor:</em> Male životinje su puž, skakavac i leptir, a velike su konj, lisica i čovjek.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 4:</strong> Kako biljka raste iz sjemena?<br>
+        <button onclick="toggleAnswer('a3')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a3"><em>Odgovor:</em> Biljka raste tako što iz sjemena prvo iznikne klica, zatim se razvijaju korijen, stabljika, listovi i na kraju cvijet i plod.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 5:</strong> Kako nastaju ptice?<br>
+        <button onclick="toggleAnswer('a4')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a4"><em>Odgovor:</em> Ptice nastaju tako što se izlegu iz jaja, a majka ih hrani i štiti dok ne porastu.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 6:</strong> Kako se zimi ponašaju biljke i životinje?<br>
+        <button onclick="toggleAnswer('a5')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a5"><em>Odgovor:</em> Zimi biljke miruju, a životinje se ili povlače u skrovišta ili spavaju zimski san.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 7:</strong> Šta se dešava u prirodi u proljeće i ljeto?<br>
+        <button onclick="toggleAnswer('a6')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a6"><em>Odgovor:</em> U proljeće priroda oživljava i sve cvjeta, dok ljeti plodovi dozrijevaju i biljke rastu.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 8:</strong> Čime se hrane biljojedi, mesojedi i svaštojedi?<br>
+        <button onclick="toggleAnswer('a7')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a7"><em>Odgovor:</em> Biljojedi jedu biljke, mesojedi jedu meso, a svaštojedi jedu i biljke i meso.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 9:</strong> Zašto ljudi uzgajaju biljke?<br>
+        <button onclick="toggleAnswer('a8')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a8"><em>Odgovor:</em> Ljudi uzgajaju biljke zbog hrane, lijekova, čajeva i drugih korisnih namjena.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 10:</strong> Koje su razlike između domaćih i divljih životinja?<br>
+        <button onclick="toggleAnswer('a9')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a9"><em>Odgovor:</em> Domaće životinje uzgaja čovjek i brine o njima, dok divlje životinje žive slobodno u prirodi.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 11:</strong> Ko su kućni ljubimci i zašto ih ljudi imaju?<br>
+        <button onclick="toggleAnswer('a10')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a10"><em>Odgovor:</em> Kućni ljubimci su životinje koje žive sa ljudima, a ljudi ih imaju radi društva i radosti.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 12:</strong> Navedi primjere mladunčadi domaćih i divljih životinja.<br>
+        <button onclick="toggleAnswer('a11')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a11"><em>Odgovor:</em> Primjeri su: krava i tele, kokoš i pile, medvjed i meče, zec i zečić.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 13:</strong> Koje koristi čovjek ima od životinja?<br>
+        <button onclick="toggleAnswer('a12')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a12"><em>Odgovor:</em> Od životinja dobijamo mlijeko, meso, jaja, vunu i pomoć u radu.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 14:</strong> Šta znači da je biljka ljekovita?<br>
+        <button onclick="toggleAnswer('a13')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a13"><em>Odgovor:</em> Ljekovita biljka je ona koja se koristi za pravljenje čajeva i prirodnih lijekova.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 15:</strong> Koje biljke rastu u povrtnjaku?<br>
+        <button onclick="toggleAnswer('a14')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a14"><em>Odgovor:</em> U povrtnjaku rastu biljke kao što su mrkva, paradajz, luk i krompir.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 16:</strong> Šta ljudi rade u voćnjaku?<br>
+        <button onclick="toggleAnswer('a15')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a15"><em>Odgovor:</em> U voćnjaku ljudi uzgajaju voće poput jabuka, krušaka i šljiva.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 17:</strong> Šta je svojstveno šumskim staništima?<br>
+        <button onclick="toggleAnswer('a16')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a16"><em>Odgovor:</em> Šumska staništa su prepuna drveća, gljiva i mnogih životinja koje tu žive i nalaze zaklon.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 18:</strong> Koje biljke rastu pored rijeka?<br>
+        <button onclick="toggleAnswer('a17')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a17"><em>Odgovor:</em> Pored rijeka najčešće rastu vrbe i topole.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 19:</strong> Šta rade ptice selice kad dolazi zima?<br>
+        <button onclick="toggleAnswer('a18')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a18"><em>Odgovor:</em> Ptice selice odlaze u toplije krajeve kada dolazi zima.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 20:</strong> Koje domaće životinje prepoznaješ na ilustracijama iz knjige?<br>
+        <button onclick="toggleAnswer('a19')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a19"><em>Odgovor:</em> Na ilustracijama prepoznajemo kravu, ovcu, kokoš, konja i svinju kao domaće životinje.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 21:</strong> Kako ljudi prave namještaj od drveta?<br>
+        <button onclick="toggleAnswer('a20')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a20"><em>Odgovor:</em> Ljudi sijeku drveće u šumi i od drveta prave namještaj kao što su stolovi, stolice i ormari.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 22:</strong> Koje žitarice rastu na njivama?<br>
+        <button onclick="toggleAnswer('a21')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a21"><em>Odgovor:</em> Na njivama rastu pšenica, raž, ječam i kukuruz.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 23:</strong> Koje promjene se događaju u neživoj prirodi?<br>
+        <button onclick="toggleAnswer('a22')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a22"><em>Odgovor:</em> U neživoj prirodi dolazi do promjena kao što su kiša, snijeg, sunčeva toplota i vjetar.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 24:</strong> Zašto je važno da biljka ima sunčevu svjetlost?<br>
+        <button onclick="toggleAnswer('a23')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a23"><em>Odgovor:</em> Sunčeva svjetlost je važna jer bez nje biljke ne mogu rasti i razvijati se.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 25:</strong> Koje životinje žive u bari?<br>
+        <button onclick="toggleAnswer('a24')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a24"><em>Odgovor:</em> U bari žive žabe, vilini konjici i insekti kao što su komarci.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 26:</strong> Koja je uloga korijena kod biljke?<br>
+        <button onclick="toggleAnswer('a25')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a25"><em>Odgovor:</em> Korijen služi da biljka upija vodu i minerale iz zemlje i da bude čvrsto vezana za tlo.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 27:</strong> Šta se dešava sa lišćem u jesen?<br>
+        <button onclick="toggleAnswer('a26')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a26"><em>Odgovor:</em> U jesen lišće žuti, vene i opada sa drveća.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 28:</strong> Koje su koristi od šuma za ljude?<br>
+        <button onclick="toggleAnswer('a27')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a27"><em>Odgovor:</em> Šume daju drvo za ogrev i građevinu, čiste zrak i pružaju zaklon životinjama.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 29:</strong> Zašto ljudi kažu da su šume pluća planete?<br>
+        <button onclick="toggleAnswer('a28')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a28"><em>Odgovor:</em> Ljudi kažu da su šume pluća planete jer proizvode kiseonik koji svi dišemo.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 30:</strong> Kako se zove stanište gdje rastu jabuke i kruške?<br>
+        <button onclick="toggleAnswer('a29')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a29"><em>Odgovor:</em> Stanište gdje rastu jabuke i kruške zove se voćnjak.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 31:</strong> Šta rade pčele na livadi?<br>
+        <button onclick="toggleAnswer('a30')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a30"><em>Odgovor:</em> Pčele na livadi sakupljaju nektar iz cvijeća i prave med.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 32:</strong> Koja životinja pravi gnijezdo na drvetu?<br>
+        <button onclick="toggleAnswer('a31')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a31"><em>Odgovor:</em> Ptica pravi gnijezdo na drvetu da bi izlegla svoje ptiće.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 33:</strong> Kako se zove mjesto gdje žive kokoške?<br>
+        <button onclick="toggleAnswer('a32')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a32"><em>Odgovor:</em> Mjesto gdje žive kokoške zove se kokošinjac.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 34:</strong> Koja životinja živi u toru?<br>
+        <button onclick="toggleAnswer('a33')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a33"><em>Odgovor:</em> Ovca živi u toru.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 35:</strong> Kako se zove mjesto gdje čovjek uzgaja povrće?<br>
+        <button onclick="toggleAnswer('a34')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a34"><em>Odgovor:</em> Mjesto gdje se uzgaja povrće zove se povrtnjak.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 36:</strong> Koja domaća životinja daje mlijeko?<br>
+        <button onclick="toggleAnswer('a35')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a35"><em>Odgovor:</em> Krava daje mlijeko.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 37:</strong> Šta rade ljudi kad beru voće?<br>
+        <button onclick="toggleAnswer('a36')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a36"><em>Odgovor:</em> Ljudi skupljaju zrele plodove s drveća kad beru voće.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 38:</strong> Koje životinje spavaju zimski san?<br>
+        <button onclick="toggleAnswer('a37')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a37"><em>Odgovor:</em> Medvjed spava zimski san.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 39:</strong> Zašto su ptice važne za prirodu?<br>
+        <button onclick="toggleAnswer('a38')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a38"><em>Odgovor:</em> Ptice pomažu u širenju sjemenki i hrane se insektima.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 40:</strong> Kako djeca rastu?<br>
+        <button onclick="toggleAnswer('a39')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a39"><em>Odgovor:</em> Djeca rastu tako što se hrane, spavaju i igraju svaki dan.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 41:</strong> Šta znači 'mladunče'?<br>
+        <button onclick="toggleAnswer('a40')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a40"><em>Odgovor:</em> 'Mladunče' znači beba životinje, kao što je tele ili pile.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 42:</strong> Šta radi veterinar?<br>
+        <button onclick="toggleAnswer('a41')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a41"><em>Odgovor:</em> Veterinar liječi bolesne životinje.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 43:</strong> Zašto je važno čuvati prirodu?<br>
+        <button onclick="toggleAnswer('a42')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a42"><em>Odgovor:</em> Prirodu treba čuvati jer nam daje zrak, vodu i hranu.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 44:</strong> Koja biljka raste na visokom drvetu i daje slatke plodove?<br>
+        <button onclick="toggleAnswer('a43')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a43"><em>Odgovor:</em> Na visokom drvetu raste jabuka koja daje slatke plodove.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 45:</strong> Koje boje mogu biti leptiri?<br>
+        <button onclick="toggleAnswer('a44')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a44"><em>Odgovor:</em> Leptiri mogu biti raznih boja kao što su žuta, plava i crvena.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 46:</strong> Koje životinje skaču po granama?<br>
+        <button onclick="toggleAnswer('a45')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a45"><em>Odgovor:</em> Vjeverice skaču po granama u šumi.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 47:</strong> Kako biljke pomažu ljudima?<br>
+        <button onclick="toggleAnswer('a46')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a46"><em>Odgovor:</em> Biljke pomažu ljudima jer proizvode kiseonik i hranu.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 48:</strong> Koja je razlika između pačića i guske?<br>
+        <button onclick="toggleAnswer('a47')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a47"><em>Odgovor:</em> Pačić je beba, a guska je odrasla životinja.</div>
+    </div>
+    
+    <div class="question">
+        <strong>Pitanje 49:</strong> Koja životinja nosi jaja, ali ne leži na njima?<br>
+        <button onclick="toggleAnswer('a48')">Prikaži / Sakrij odgovor</button>
+        <div class="answer" id="a48"><em>Odgovor:</em> Kornjača nosi jaja, ali ih ne leži kao ptice.</div>
+    </div>
+    
+<script>
+    function toggleAnswer(id) {
+        const el = document.getElementById(id);
+        if (el.style.display === "block") {
+            el.style.display = "none";
+        } else {
+            el.style.display = "block";
+        }
+    }
+</script>
+</body>
+</html>
